@@ -1,0 +1,16 @@
+<div class='navbar nav p-2 bg-primary rounded-bottom'>
+    <div class='nav-item'>
+        <?if(isset($_SESSION['username'])){?>
+        <a href='/index/logout' class='text-light fw-bolder fs-3'>Log Out</a>
+        <?}?>
+    </div>
+</div>
+<div class='container w-25 m-auto mt-5'>
+    <form class='form-floating' method="post">
+        <div class='form-floating mb-3'>
+            <input type='text' placeholder='Name' class='form-control' id='username' name='username'>
+            <label for='username'>Username</label>
+        </div>
+        <input type='submit' class='btn btn-light fw-bolder float-end' value="LOG IN">
+        </form>
+</div>
